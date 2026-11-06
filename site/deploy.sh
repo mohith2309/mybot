@@ -13,7 +13,7 @@ set -euo pipefail
 
 project="mohith-sites-2309"
 site="mybot2"
-repo="mohith2309real/mybot"
+repo="mohith2309/mybot"
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 if [ "${1:-}" = "--build-only" ]; then

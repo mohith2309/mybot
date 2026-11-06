@@ -35,7 +35,7 @@ pub const PUBLIC_KEY: [u8; 32] = [
 
 /// Where releases are published. `latest/download/<file>` always resolves to
 /// the newest release, without the GitHub API (and its rate limit).
-pub const DEFAULT_FEED: &str = "https://github.com/mohith2309real/mybot/releases/latest/download";
+pub const DEFAULT_FEED: &str = "https://github.com/mohith2309/mybot/releases/latest/download";
 
 /// How often the app looks, when automatic updates are on.
 pub const CHECK_EVERY: Duration = Duration::from_secs(6 * 60 * 60);

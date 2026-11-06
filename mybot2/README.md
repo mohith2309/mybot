@@ -30,7 +30,7 @@ and export, so third-party skills work too.
 
 **[mybot2.web.app](https://mybot2.web.app/)** —
 builds for Windows, macOS (Apple silicon and Intel) and Linux, also on the
-[releases page](https://github.com/mohith2309real/mybot/releases). The release
+[releases page](https://github.com/mohith2309/mybot/releases). The release
 notes say how to open them the first time, since they aren't signed by Apple or
 Microsoft yet. You also need Docker for the agent computers.
 

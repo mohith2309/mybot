@@ -1,13 +1,17 @@
-MyBot 3.0.9 is a new look: black and white, a face for every teammate, and a wallpaper for every teammate's computer. Website: https://mybot2.web.app
+MyBot 3.0.10 changes where the app looks for updates. Everything else is the same as 3.0.9. Website: https://mybot2.web.app
 
 ## What's new
+
+- **A new home for updates.** Releases now come from github.com/mohith2309/mybot. Updates are still signed with the same key and still install by themselves.
+
+## New in 3.0.9
 
 - **Monochrome.** True greys on black, with white as the one accent. Colour is kept for meaning only: red while you teach a task and on buttons that delete.
 - **A face for every teammate.** Eight to pick from when you create or edit a teammate: Pip, Glance, Bean, Brick, Leaf, Ghost, Moon and Blob. The face shows what the teammate is doing, and each one moves in its own ways. While it works, it reads, types, thinks, scans or hums. When it needs you, it goes wide-eyed and bounces, wiggles or pulses. When it's done, ^ ^ with a hop, a sway or a sparkle. Idle faces blink and now and then glance aside, breathe or doze. Faces only animate while something is happening.
 - **A new icon and wordmark.** The app icon is the face *Glance*; the sidebar shows the MyBot wordmark.
 - **A wallpaper for its computer.** Every teammate's desktop starts on the MyBot wallpaper ("shhh... let's not leak our hard work"), with a dark panel. The desktop image is rebuilt once, automatically, the first time a computer starts (it's now `mybot-desktop:0.4`). The 4K wallpaper is on the website.
 
-Updating from 2.1 or 2.2 happens by itself: **Restart** when MyBot says it's ready.
+Updating from an earlier version happens by itself: **Restart** when MyBot says it's ready.
 
 ## Download
 
@@ -41,7 +45,7 @@ The same file is also the command line: `mybot2 --help`.
 - **Skills:** 245 built in plus your own; Agent Skills (`SKILL.md`) import and export. **Teach a task** by doing it once. **Routines** run skills on a schedule.
 - **GPT** with an API key or your ChatGPT sign-in. **Signed updates** that install themselves.
 
-Full guide: [mybot2/README.md](https://github.com/mohith2309real/mybot/blob/v3.0.9/mybot2/README.md).
+Full guide: [mybot2/README.md](https://github.com/mohith2309/mybot/blob/v3.0.10/mybot2/README.md).
 
 ## Known limits
 
