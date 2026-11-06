@@ -228,7 +228,7 @@ const mb = (n) => `${(n / 1048576).toFixed(n > 10485760 ? 0 : 1)} MB`;
 // fallback if that's unreachable or rate-limited.
 async function latestRelease() {
   try {
-    const r = await fetch("https://api.github.com/repos/mohith2309real/mybot/releases/latest", { headers: { Accept: "application/vnd.github+json" } });
+    const r = await fetch("https://api.github.com/repos/mohith2309/mybot/releases/latest", { headers: { Accept: "application/vnd.github+json" } });
     if (!r.ok) throw r.status;
     const rel = await r.json();
     const assets = {};
