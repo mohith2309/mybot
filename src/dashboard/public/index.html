@@ -54,7 +54,7 @@
   <main class="thread" id="thread">
 
     <header class="thread-head" id="thread-head" hidden>
-      <button class="icon-btn only-narrow" id="back-btn" aria-label="Back to team">
+      <button class="icon-btn only-narrow" id="back-btn" title="Back to team" aria-label="Back to team">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div class="avatar" id="head-avatar"></div>
@@ -90,19 +90,19 @@
 
     <form class="composer" id="composer" hidden>
       <div class="composer-box">
-        <button class="plus-btn" id="plus-btn" type="button" aria-label="Agent computer">
+        <button class="plus-btn" id="plus-btn" type="button" title="Agent computer" aria-label="Agent computer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
         </button>
-        <textarea id="input" rows="1" placeholder="Message your bot…" autocomplete="off"></textarea>
-        <button class="send-btn" id="send" type="submit" aria-label="Send">
+        <textarea id="input" rows="1" placeholder="Message your bot…" aria-label="Message your bot" autocomplete="off"></textarea>
+        <button class="send-btn" id="send" type="submit" title="Send" aria-label="Send">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5.5 18.5 12 12 18.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <button class="stop-btn" id="stop" type="button" aria-label="Stop" hidden>
+        <button class="stop-btn" id="stop" type="button" title="Stop" aria-label="Stop" hidden>
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2" fill="currentColor"/></svg>
         </button>
       </div>
       <div class="composer-hint" id="composer-hint">Enter to send · Shift+Enter for a new line</div>
-      <div class="working" id="working" hidden>
+      <div class="working" id="working" hidden aria-live="polite">
         <span class="working-dots"><i></i><i></i><i></i></span>
         <span id="working-text">Working…</span>
       </div>
@@ -121,7 +121,7 @@
       <div class="sheet-actions">
         <span class="rec-badge" id="rec-badge" hidden>Recording</span>
         <a class="ghost-btn" id="sheet-popout" target="_blank" rel="noreferrer">Open in a tab</a>
-        <button class="icon-btn" id="sheet-close" aria-label="Close">
+        <button class="icon-btn" id="sheet-close" title="Close" aria-label="Close">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         </button>
       </div>
@@ -146,7 +146,7 @@
       </div>
       <div class="sheet-actions">
         <button class="ghost-btn" id="mac-off" hidden>Turn off sharing</button>
-        <button class="icon-btn" id="mac-close" aria-label="Close">
+        <button class="icon-btn" id="mac-close" title="Close" aria-label="Close">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         </button>
       </div>
@@ -165,7 +165,7 @@
         <h2 id="bot-sheet-title">New teammate</h2>
         <p class="sheet-sub">A persona over its own computer.</p>
       </div>
-      <button class="icon-btn" id="bot-sheet-close" aria-label="Close">
+      <button class="icon-btn" id="bot-sheet-close" title="Close" aria-label="Close">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </button>
     </header>
@@ -193,7 +193,7 @@
   <section class="sheet panel" role="dialog" aria-modal="true" aria-labelledby="list-title">
     <header class="sheet-head">
       <h2 id="list-title"></h2>
-      <button class="icon-btn" id="list-close" aria-label="Close">
+      <button class="icon-btn" id="list-close" title="Close" aria-label="Close">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </button>
     </header>
