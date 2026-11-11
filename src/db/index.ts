@@ -141,13 +141,11 @@ export interface LogEntry {
 }
 
 export function appendTaskLog(id: string, kind: string, text: string): void {
-  const row = openDb().prepare('SELECT log FROM tasks WHERE id = ?').get(id) as
-    | { log: string }
-    | undefined;
-  if (!row) return;
-  const entries: LogEntry[] = JSON.parse(row.log || '[]');
-  entries.push({ at: new Date().toISOString(), kind, text });
-  openDb().prepare('UPDATE tasks SET log = ? WHERE id = ?').run(JSON.stringify(entries), id);
+  const entry = { at: new Date().toISOString(), kind, text };
+  // ⚡ Bolt: Offload JSON array push to SQLite to avoid O(N) read/parse/stringify overhead
+  openDb()
+    .prepare("UPDATE tasks SET log = json_insert(COALESCE(NULLIF(log, ''), '[]'), '$[#]', json(?)) WHERE id = ?")
+    .run(JSON.stringify(entry), id);
 }
 
 export function readTaskLog(id: string): LogEntry[] {
